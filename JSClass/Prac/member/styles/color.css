@@ -10,7 +10,12 @@ body {
     color: red;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
+input[type="email"], input[type="password"], input[type="button"] {
+    background-color: white;
+    border-color: #DFDFDF;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
     outline-color: #106EBE;
 }
 
@@ -21,4 +26,16 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #313131;
+}
+
+button[type="button"] {
+    background-color: #fddc3f;
+}
+
+#div_line span {
+    color: #858585;
+}
+
+#div_hr {
+    border-color: #DFDFDF;
 }
