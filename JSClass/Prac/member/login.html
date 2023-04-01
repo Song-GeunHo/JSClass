@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <style>
+        @import url('styles/font.css');
+        @import url('styles/layout.css');
+        @import url('styles/size.css');
+        @import url('styles/color.css');
+    </style>
+</head>
+
+<body>
+    <div id="all_wrap">
+        <div id="form_wrap">
+            <a href="#">
+                <figure><img src="images/ARTMU.png"></figure>
+            </a>
+
+            <form id="login" onsubmit="return false;">
+                <div id="inner_wrap">
+                    <div id="login_input">
+                        <label>
+                            <h3>아이디</h3>
+                            <input type="text" id="id" placeholder="아이디 입력" minlength="5" maxlength="15" required>
+                            <h4></h4>
+                        </label>
+                        <label>
+                            <h3>비밀번호</h3>
+                            <input type="password" id="pw" placeholder="비밀번호 입력" minlength="8" required>
+                            <h4></h4>
+                        </label>
+                        <input type="submit" id="submit" value="로그인">
+                        <script src="scripts/script.js"></script>
+                    </div>
+                    <div id="login_opt">
+                        <span>
+                            <label>
+                                <input type="checkbox">
+                                로그인 유지
+                            </label>
+                        </span>
+                        <span>
+                            <a href="#"><span>아이디</span></a> / <a href="#"><span>비밀번호 찾기</span></a> >
+                        </span>
+                    </div>
+                    <div id="ul_wrap">
+                        <ul>
+                            <li><img src="images/naver.png"></li>
+                            <li><img src="images/kakao.png"></li>
+                            <li><img src="images/google.png"></li>
+                            <li><img src="images/facebook.png"></li>
+                        </ul>
+                    </div>
+                    <p>아직 아트뮤 회원이 아니세요?<a href="#">회원가입 하기</a></p>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
