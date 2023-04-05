@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        @import url('styles/font.css');
+        @import url('styles/layout.css');
+        @import url('styles/size.css');
+        @import url('styles/color.css');
+    </style>
+</head>
+
+<body>
+    <div id="all_wrap">
+        <div id="form_wrap">
+            <a href="#">
+                <figure><img src="images/ARTMU.png"></figure>
+            </a>
+
+            <form id="login" onsubmit="return false;" novalidate>
+                <div id="inner_wrap">
+                    <h2>이메일로 가입하기</h2>
+                    <label>
+                        <h3>이메일 주소</h3>
+                        <input id="id" type="email" placeholder="이메일 주소 입력" maxlength="24" required minlength="6">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <button id="cert_email" type="button">인증</button>
+                    <label>
+                        <h3>비밀번호</h3>
+                        <input id="pw" type="password" placeholder="비밀번호 입력" required minlength="8">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <label>
+                        <h3>비밀번호 확인</h3>
+                        <input class="rePw" id="pw" type="password" placeholder="비밀번호 재입력" required minlength="8">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <h3>본인인증</h3>
+                    <button id="cert_phone">휴대폰 본인 인증하기</button>
+                    <label>
+                        <input id="terms_1" type="checkbox"> 아트뮤 가입 약관에 모두 동의합니다.
+                    </label>
+                    <span>확인하기</span>
+                    <p>아트뮤 이용약관(필수), 개인정보취급방침(필수), 개인정보 수집·이용 약관(필수), 마케팅정보 수집동의(선택)</p>
+
+                    <button id="signUp" type="button">가입 완료</button>
+
+                </div>
+            </form>
+            <script src="scripts/inputCheck.js"></script>
+        </div>
+    </div>
+</body>
+
+
+</html>

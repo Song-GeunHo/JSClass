@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        @import url('styles/font.css');
+        @import url('styles/layout.css');
+        @import url('styles/size.css');
+        @import url('styles/color.css');
+    </style>
+    <script>
+        var users = [ ["qwe", "123" , "001" ], ["rty", "456", "002"], ["uio", "789", "003"] ];
+        function logIn() {
+            let id = document.getElementById("id");
+            let ID = id.value;
+            let pw = document.getElementById("pw");
+            let PW = pw.value;
+
+            for ( let i = 0 ; i < users.length ; i++ ) {
+                if( ( users[i][0] === ID ) && ( users[i][1] === PW ) ) {
+                    logOut_btn_control();
+                    // id.classList.replace()
+                }
+            }
+        }
+
+        function logOut_btn_control() {
+            let btn = document.getElementById("logOut_btn");
+            btn.style.display = "block";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="all_wrap">
+        <div id="form_wrap">
+            <a href="main.html">
+                <figure><img src="images/ARTMU.png"></figure>
+            </a>
+            <form id="login" onsubmit="return false;" novalidate>
+                <div id="inner_wrap">
+                    <div id="contents">
+                        <div id="user_info">
+                            <label>
+                                <h3>아이디</h3>
+                                <input type="email" id="id" name="id" placeholder="아이디 입력" maxlength="24" required minlength="6">
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                            <br><br>
+                            <label>
+                                <h3>비밀번호</h3>
+                                <input type="password" id="pw" name="pw" placeholder="비밀번호 입력" required minlength="8">
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                        </div>
+                        <input type="button" class="button" id="logIn_btn" value="로그인">
+                        <input type="button" class="button" id="logOut_btn" value="로그아웃">
+                    </div>
+                    <div id="login_opt">
+                        <span>
+                            <a href="changeInfo.html">회원정보 변경</a> / <a href="changePassword.html">비밀번호 변경</a>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

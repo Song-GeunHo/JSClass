@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        @import url('styles/myTheme.css');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').hover(function () {
+                $(this).css({
+                    backgroundColor: 'skyblue',
+                    color: 'white'
+                });
+            }, function () {
+                $(this).css({
+                    background: '',
+                    color: ''
+                });
+            });
+            $('h1').click(function () {
+                $(this).css({
+                    background: 'pink',
+                    color: 'white'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+    <h1>Click</h1>
+</body>
+
+</html>

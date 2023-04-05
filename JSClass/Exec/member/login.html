@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        @import url('styles/font.css');
+        @import url('styles/layout.css');
+        @import url('styles/size.css');
+        @import url('styles/color.css');
+    </style>
+</head>
+
+<body>
+    <div id="all_wrap">
+        <div id="form_wrap">
+            <a href="#">
+                <figure><img src="images/ARTMU.png"></figure>
+            </a>
+
+            <form id="login" onsubmit="return false;" novalidate>
+                <div id="inner_wrap">
+                    <div id="login_input">
+                            <label>
+                                <h3>아이디</h3>
+                                <input type="email" id="id" name="id" placeholder="아이디 입력" maxlength="24" required minlength="6">
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                            <label>
+                                <h3>비밀번호</h3>
+                                <input type="password" id="pw" name="pw" placeholder="비밀번호 입력" required minlength="8">
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                        <input type="submit" id="submit" value="로그인" onclick="check_input();">
+                    </div>
+                    <div id="login_opt">
+                        <span>
+                            <label>
+                                <input id="keep_logIn" type="checkbox">
+                                로그인 유지
+                            </label>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <span>아이디</span>
+                            </a> /
+                            <a href="#">
+                                <span>비밀번호</span>
+                                찾기 >
+                            </a>
+                        </span>
+                    </div>
+                    <div id="login_ul_wrap">
+                        <ul>
+                            <li><img src="images/naver.png"></li>
+                            <li><img src="images/kakao.png"></li>
+                            <li><img src="images/google.png"></li>
+                            <li><img src="images/apple.png"></li>
+                            <li><img src="images/facebook.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p><a href="sign.html">아직 아트뮤 회원이 아니세요?<span>회원가입 하기</span></a></p>
+            </form>
+            <script src="scripts/inputCheck.js"></script>
+
+        </div>
+    </div>
+</body>
+
+</html>

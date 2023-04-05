@@ -18,27 +18,17 @@
     flex-direction: column;
 }
 
-#login_input {
+#contents {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#login_input label {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#login h4 {
-    text-align: center;
-}
-
-input[type="email"], input[type="password"], input[type="button"] {
+#id, #pw, input[type="button"] {
     border-style: solid;
 }
 
-input[type="submit"],
+.button,
 #login_opt label,
 li img {
     cursor: pointer;
@@ -55,6 +45,10 @@ li img {
     text-align: center;
 }
 
+#logOut_btn {
+    display: none;
+}
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -66,11 +60,10 @@ li {
 
 a {
     text-decoration-line: none;
-    color: black;
 }
 
-a:visited {
-    color: black;
+a:hover {
+    text-decoration: underline;
 }
 
 p span {
@@ -82,29 +75,4 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
-}
-
-button[type="button"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: none;
-}
-
-button[type="button"], #sign_ul_wrap li, input[type="button"] {
-    cursor: pointer;
-}
-
-#div_line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#div_line * {
-    display: inline-block;
-}
-
-#div_hr {
-    border-style: solid;
 }

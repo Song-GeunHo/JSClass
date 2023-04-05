@@ -23,15 +23,6 @@ body {
     border-radius: 5%;
 }
 
-#sign_ul_wrap li {
-    display: inline-block;
-}
-
-#sign_ul_wrap img {
-    width: 25px;
-    height: 25px;
-}
-
 #inner_wrap {
     width: 320px;
     margin: 0 auto;
@@ -58,16 +49,16 @@ input {
     border-radius: 5px;
 }
 
-input[type="email"], input[type="password"] {
+#id, #pw {
     padding-left: 10px;
 }
 
-input[type="submit"] {
+.button {
     margin-top: 20px;
     font-weight: 800;
 }
 
-input[type="checkbox"] {
+#keep_logIn {
     width: 12px;
     height: 12px;
 }
@@ -78,10 +69,7 @@ label {
 
 #login h3 {
     font-size: .9em;
-}
-
-#login h4 {
-    height: 20px;
+    margin-bottom: 5px;
 }
 
 #login_opt {
@@ -105,55 +93,13 @@ ul img {
 
 #login_ul_wrap img:hover {
     box-shadow: 0 8px 10px 0 rgb(215, 215, 215);
- }
+}
 
 p span {
     font-weight: 500;
     padding-left: 15px;
 }
 
-button[type="button"] {
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 10px;
-    font-weight: 1000;
-}
-
-button[type="button"] img {
-    width: 30px;
-    height: 30px;
-}
-
 #sign_wrap {
     margin-top: 100px;
-}
-
-#content {
-    margin-top: 100px;
-}
-
-#sign_ul_wrap li:hover > img, #sign_ul_wrap li:hover > span {
-    opacity: .6;
-}
-
-#sign_ul_wrap img{
-    position: relative;
-    top: 7px;
-}
-
-#div_line span {
-    padding: 0 10px;
-}
-
-#div_hr {
-    width: 130px;
-    height: 1px;
-    border-width: 1px;
-}
-
-input[type="button"] {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-weight: 600;
 }

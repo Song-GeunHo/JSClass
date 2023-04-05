@@ -14,30 +14,29 @@
 <body>
     <div id="all_wrap">
         <div id="form_wrap">
-            <a href="#">
+            <a href="main.html">
                 <figure><img src="images/ARTMU.png"></figure>
             </a>
 
-            <form id="login" onsubmit="return false;">
+            <form id="login" onsubmit="return false;" novalidate>
                 <div id="inner_wrap">
-                    <div id="login_input">
-                        <label>
-                            <h3>아이디</h3>
-                            <input type="email" id="id" placeholder="아이디 입력" minlength="8" maxlength="24" required>
-                            <h3></h3>
-                        </label>
-                        <label>
-                            <h3>비밀번호</h3>
-                            <input type="password" id="pw" placeholder="비밀번호 입력" minlength="8" required>
-                            <h4></h4>
-                        </label>
-                        <input type="submit" id="submit" value="로그인">
-                        <script src="scripts/script.js"></script>
+                    <div id="contents">
+                            <label>
+                                <h3>아이디</h3>
+                                <input type="email" id="id" name="id" placeholder="아이디 입력" maxlength="24" required minlength="6">
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                            <label>
+                                <h3>비밀번호</h3>
+                                <input type="password" id="pw" name="pw" placeholder="비밀번호 입력" required minlength="8">
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                        <input type="submit" id="button" value="로그인">
                     </div>
                     <div id="login_opt">
                         <span>
                             <label>
-                                <input type="checkbox">
+                                <input id="keep_logIn" type="checkbox">
                                 로그인 유지
                             </label>
                         </span>
@@ -61,9 +60,9 @@
                         </ul>
                     </div>
                 </div>
-                <p><a href="#">아직 아트뮤 회원이 아니세요?<span>회원가입 하기</span></a></p>
+                <p><a href="sign.html">아직 아트뮤 회원이 아니세요?<span>회원가입 하기</span></a></p>
             </form>
-
+            <script src="scripts/inputCheck.js"></script>
 
         </div>
     </div>

@@ -1,0 +1,95 @@
+#all_wrap {
+    display: flex;
+    align-items: center;
+}
+
+#form_wrap, p {
+    text-align: center;
+}
+
+#login_opt {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+#login_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#id, #pw, input[type="button"] {
+    border-style: solid;
+}
+
+#submit,
+#login_opt label,
+li img {
+    cursor: pointer;
+}
+
+#login_ul_wrap::before {
+    content: "SNS로 간편하게 시작하기";
+    display: block;
+    text-align: center;
+    cursor: text;
+}
+
+#inner_wrap>p {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+p span {
+    text-decoration: underline;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#signUp_kakao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+
+#signUp_kakao, #sign_ul_wrap li, #signUp_email {
+    cursor: pointer;
+}
+
+#div_line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_line * {
+    display: inline-block;
+}
+
+#div_hr {
+    border-style: solid;
+}

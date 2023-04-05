@@ -1,0 +1,57 @@
+body {
+    background-color: #F9FAFB;
+}
+
+#form_wrap {
+    background-color: white;
+}
+
+#id.valid, #pw.valid {
+    border-color: #DFDFDF;
+}
+
+#id.invalid, #pw.invalid {
+    border-color: #900;
+}
+
+.error {
+    color : #900;
+}
+
+#id, #pw, #signUp_email {
+    background-color: white;
+    border-color: #DFDFDF;
+}
+
+/* input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #106EBE;
+} */
+
+#submit {
+    color: white;
+    background-color: black;
+}
+
+#submit:hover {
+    background-color: #313131;
+}
+
+#signUp_kakao {
+    background-color: #fddc3f;
+}
+
+#div_line span {
+    color: #858585;
+}
+
+#div_hr {
+    border-color: #DFDFDF;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
